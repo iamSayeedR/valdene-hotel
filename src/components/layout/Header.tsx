@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { PrimaryButton } from '../ui/PrimaryButton'
+import { Logo } from '../ui/Logo'
 import { MobileMenu } from './MobileMenu'
 
 const navLinks = [
@@ -34,7 +35,7 @@ export function Header() {
         <div className="bg-[#F4EFE6] text-[#2B2623] border-b border-[#D8D0C5] py-2 hidden lg:block">
           <div className="site-container flex justify-between items-center text-xs">
             <span className="tracking-widest uppercase font-bold text-[#7A2332] text-[11px]">
-              Family-Run Ensuite Accommodation · Est. 1997
+              FAMILY-RUN ENSUITE ACCOMMODATION · EST. 1997
             </span>
             <div className="flex items-center gap-6 font-semibold text-[#2B2623]">
               <a href="tel:+441253291080" className="hover:text-[#7A2332] transition-colors flex items-center gap-1.5 whitespace-nowrap">
@@ -51,22 +52,8 @@ export function Header() {
         {/* Main Navigation Bar */}
         <div className="site-container">
           <div className="flex items-center justify-between h-20 lg:h-[84px] gap-4">
-            {/* Logo & Brand */}
-            <Link to="/" className="flex items-center gap-3 group shrink-0 py-1">
-              <img
-                src="https://www.valdenehotelblackpool.com/wp-content/uploads/2021/03/StarRating_DarkBlue.png"
-                alt="Valdene Hotel Star Rating"
-                className="h-7 sm:h-8 w-auto shrink-0"
-              />
-              <div className="flex flex-col shrink-0">
-                <span className="font-serif text-[22px] sm:text-[25px] font-bold tracking-tight text-[#2B2623] leading-none group-hover:text-[#7A2332] transition-colors whitespace-nowrap">
-                  Valdene Hotel
-                </span>
-                <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#7A2332] mt-1 whitespace-nowrap">
-                  Est. 1997 · Blackpool
-                </span>
-              </div>
-            </Link>
+            {/* Reusable Official Valdene Logo */}
+            <Logo />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden xl:flex items-center gap-5 lg:gap-6 shrink-0" aria-label="Main navigation">

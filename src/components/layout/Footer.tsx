@@ -1,21 +1,15 @@
 import { Link } from 'react-router-dom'
 import { hotel } from '../../data/hotel'
+import { Logo } from '../ui/Logo'
 
 export function Footer() {
   return (
     <footer className="bg-[#2B2623] text-white border-t border-white/10">
       <div className="site-container py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
-          {/* Column 1: Valdene Hotel Identity */}
-          <div className="md:col-span-4 space-y-3">
-            <Link to="/" className="block">
-              <span className="font-serif text-[26px] font-bold text-white block leading-none hover:text-amber-200 transition-colors">
-                Valdene Hotel
-              </span>
-              <span className="text-[11px] tracking-[0.2em] uppercase text-amber-300 font-bold mt-1 block">
-                Est. 1997 · Blackpool
-              </span>
-            </Link>
+          {/* Column 1: Valdene Hotel Official Identity */}
+          <div className="md:col-span-4 space-y-4">
+            <Logo light />
             <p className="text-sm text-white/70 leading-relaxed max-w-sm font-normal">
               Family-run ensuite accommodation in the heart of Blackpool. Est. 1997.
             </p>
@@ -45,7 +39,7 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Contact (Sufficient width to prevent email wrapping) */}
+          {/* Column 3: Contact */}
           <div className="md:col-span-3 space-y-2">
             <h3 className="text-xs tracking-[0.2em] uppercase text-amber-300 font-bold mb-4">
               Contact
