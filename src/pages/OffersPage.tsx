@@ -15,17 +15,17 @@ export function OffersPage() {
       </div>
 
       <div className="site-container max-w-2xl mx-auto mb-16">
-        <div className="bg-white p-8 sm:p-12 border border-[#D8D0C5] text-center shadow-xs">
+        <div className="bg-white p-8 sm:p-12 border border-[#D8D0C5] text-center shadow-xs rounded-lg">
           <span className="font-serif text-2xl font-bold text-[#7A2332] block mb-3">Direct Booking Guarantee</span>
           <p className="text-base text-[#5C5650] leading-relaxed mb-8 font-normal">
             {offersContactNote}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 border-t border-[#EBE5DC]">
-            <PrimaryButton size="lg" className="font-bold" />
+            <PrimaryButton size="lg" className="font-bold w-full sm:w-auto" />
             <a
               href={hotel.contact.phoneHref}
-              className="text-xs uppercase tracking-widest text-[#2B2623] font-bold border border-[#2B2623] px-6 py-4 hover:bg-[#2B2623] hover:text-white transition-all"
+              className="text-xs uppercase tracking-widest text-[#2B2623] font-bold border border-[#D8D0C5] bg-[#FAF7F2] px-6 py-3.5 rounded-md hover:bg-[#7A2332] hover:text-white hover:border-[#7A2332] transition-all w-full sm:w-auto text-center"
             >
               Call Us: {hotel.contact.phone}
             </a>

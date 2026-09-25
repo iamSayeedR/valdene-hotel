@@ -10,8 +10,8 @@ const galleryImages = [
     alt: 'Valdene Hotel Ensuite Double Room',
   },
   {
-    src: 'https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/732fc899-1974-4591-9465-59553e9f4971-l.jpg?fit=1024%2C768&ssl=1',
-    alt: 'Valdene Hotel Bar and Lounge',
+    src: 'https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/FullEnglishBreakfast2.jpg?fit=800%2C469&ssl=1',
+    alt: 'Valdene Hotel Fresh Breakfast Meal',
   },
 ]
 
@@ -34,7 +34,7 @@ export function HotelGallery() {
                 alt={img.alt}
                 className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/space-2.jpg?fit=812%2C608&ssl=1'
+                  (e.target as HTMLImageElement).src = 'https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/FullEnglishBreakfast2.jpg?fit=800%2C469&ssl=1'
                 }}
               />
             </div>
