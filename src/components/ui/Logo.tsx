@@ -6,28 +6,33 @@ interface LogoProps {
 }
 
 export function Logo({ light = false, className = '' }: LogoProps) {
+  const colorClass = light ? 'text-white' : 'text-[#2A333F]'
+  const subColorClass = light ? 'text-amber-300 border-white/30' : 'text-[#2A333F]/80 border-[#2A333F]/30'
+  const lineClass = light ? 'bg-white/40' : 'bg-[#2A333F]/40'
+
   return (
-    <Link to="/" className={`flex items-center gap-3.5 group shrink-0 py-1 ${className}`}>
+    <Link to="/" className={`inline-flex flex-col items-center group py-1 ${className}`}>
+      {/* Centered 3 Stars */}
       <img
         src="https://www.valdenehotelblackpool.com/wp-content/uploads/2021/03/StarRating_DarkBlue.png"
         alt="Valdene Hotel 3 Star Rating"
-        className="h-7 sm:h-8 w-auto shrink-0"
+        className="h-4 sm:h-5 w-auto mb-1 object-contain transition-transform duration-300 group-hover:scale-105"
       />
-      <div className="flex flex-col shrink-0 leading-tight">
-        <span
-          className={`font-serif text-[22px] sm:text-[25px] font-bold tracking-tight leading-none transition-colors whitespace-nowrap ${
-            light ? 'text-white group-hover:text-amber-200' : 'text-[#2B2623] group-hover:text-[#7A2332]'
-          }`}
-        >
-          Valdene Hotel
-        </span>
-        <span
-          className={`text-[10px] tracking-[0.22em] uppercase font-bold mt-1 whitespace-nowrap ${
-            light ? 'text-amber-300' : 'text-[#7A2332]'
-          }`}
-        >
-          EST. 1997 · BLACKPOOL
-        </span>
+
+      {/* Main Title: VALDENE HOTEL */}
+      <span
+        className={`font-serif text-[20px] sm:text-[24px] font-bold tracking-[0.12em] uppercase leading-none transition-colors ${
+          light ? 'group-hover:text-amber-200' : 'group-hover:text-[#7A2332]'
+        } ${colorClass}`}
+      >
+        Valdene Hotel
+      </span>
+
+      {/* Subtitle: ─── Est 1997 ─── */}
+      <div className={`flex items-center justify-center gap-2 mt-1 w-full text-[11px] font-serif ${subColorClass}`}>
+        <span className={`h-[1px] w-6 sm:w-8 ${lineClass}`} />
+        <span className="tracking-wider">Est 1997</span>
+        <span className={`h-[1px] w-6 sm:w-8 ${lineClass}`} />
       </div>
     </Link>
   )
