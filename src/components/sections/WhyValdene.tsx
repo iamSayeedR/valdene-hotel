@@ -3,8 +3,8 @@ import { SectionHeading } from '../ui/SectionHeading'
 const features = [
   {
     number: '01',
-    title: 'Family-Run Since 1997',
-    description: 'Personalized service, warm hospitality, and attentive care from hosts Bob & Linda throughout your stay in Blackpool.',
+    title: 'Family-Run Hospitality',
+    description: `We take pride in welcoming guests through the door and making sure they get everything from a great night's sleep to a fantastic breakfast in the morning.`,
   },
   {
     number: '02',
@@ -28,8 +28,8 @@ export function WhyValdene() {
     <section className="py-20 md:py-28 bg-[#F0EAE0] border-t border-[#D8D0C5]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
         <SectionHeading
-          heading="The Valdene Experience"
-          subheading="Providing clean and comfortable Blackpool seaside accommodation since 1997."
+          heading="Taking Care of Our Wonderful Guests"
+          subheading="If there's anything you wish to ask us or need assistance with, please do not hesitate to ask — we'll only be too happy to help."
           align="center"
           className="mb-16"
         />

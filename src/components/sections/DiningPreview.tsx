@@ -7,7 +7,7 @@ export function DiningPreview() {
     <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
         <SectionHeading
-          heading="Meal Options"
+          heading="Providing Food, Drink and Entertainment"
           subheading={dining.intro}
           align="center"
           className="mb-16"
@@ -100,7 +100,7 @@ export function DiningPreview() {
 
         <div className="mt-16 text-center">
           <SecondaryButton to="/dining" className="bg-white">
-            View All Meal & Bar Options →
+            View Meal Options →
           </SecondaryButton>
         </div>
       </div>

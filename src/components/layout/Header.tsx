@@ -5,12 +5,11 @@ import { MobileMenu } from './MobileMenu'
 
 const navLinks = [
   { to: '/', label: 'Home' },
+  { to: '/offers', label: 'Special offers' },
   { to: '/rooms', label: 'Rooms' },
-  { to: '/dining', label: 'Meal Options' },
-  { to: '/offers', label: 'Special Offers' },
+  { to: '/dining', label: 'Meal options' },
   { to: '/explore-blackpool', label: 'Visit Blackpool' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/careers', label: 'Careers' },
 ]
 
 export function Header() {
@@ -35,7 +34,7 @@ export function Header() {
         <div className="bg-[#F4EFE6] text-[#2B2623] border-b border-[#D8D0C5] py-2 hidden lg:block">
           <div className="max-w-[1320px] mx-auto px-6 lg:px-10 flex justify-between items-center text-xs">
             <span className="tracking-widest uppercase font-bold text-[#7A2332] text-[11px]">
-              ★ ★ ★ ★ Family-Run Ensuite Accommodation · Est. 1997
+              Family-Run Ensuite Accommodation · Est. 1997
             </span>
             <div className="flex items-center gap-6 font-semibold text-[#2B2623]">
               <a href="tel:+441253291080" className="hover:text-[#7A2332] transition-colors flex items-center gap-1.5">

@@ -25,7 +25,7 @@ export const hotel = {
   },
   location: {
     description: 'We are a five-minute walk from Blackpool North train station, North Pier, Winter Gardens and close to many of Blackpool\'s most famous attractions and points of interest: Blackpool Pleasure Beach, Central Pier, South Pier, Sandcastle Water Park, Stanley Park and Zoo.',
-    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2363.8!2d-3.0513!3d53.8196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b41b3fa77db6f%3A0x9c9e1a1b2c3d4e5f!2s16%20Cocker%20St%2C%20Blackpool%20FY1%202BY!5e0!3m2!1sen!2suk!4v1234567890',
+    mapEmbed: 'https://maps.google.com/maps?q=16+Cocker+Street+Blackpool+FY1+2BY&t=&z=16&ie=UTF8&iwloc=&output=embed',
   },
   awards: [
     {

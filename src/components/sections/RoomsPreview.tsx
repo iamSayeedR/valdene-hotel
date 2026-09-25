@@ -17,7 +17,7 @@ export function RoomsPreview() {
             subheading="Every room features full ensuite bathroom facilities, flat screen TV with Freeview, free Wi-Fi, tea & coffee tray, safe, hairdryer, and central heating."
           />
           <SecondaryButton to="/rooms" className="shrink-0 bg-white">
-            Explore All 10 Rooms →
+            View All Rooms →
           </SecondaryButton>
         </div>
 
@@ -35,7 +35,7 @@ export function RoomsPreview() {
               </span>
             </div>
 
-            <div className="lg:col-span-5 p-7 sm:p-10 flex flex-col justify-start">
+            <div className="lg:col-span-5 p-7 sm:p-10 flex flex-col justify-center">
               <span className="text-xs uppercase tracking-[0.18em] text-[#7A2332] font-bold block mb-2">
                 {heroRoom.typeLabel}
               </span>
@@ -58,7 +58,7 @@ export function RoomsPreview() {
                 ))}
               </div>
 
-              <div className="mt-auto pt-6 border-t border-[#EBE5DC] flex items-center justify-between gap-4 flex-wrap">
+              <div className="pt-6 border-t border-[#EBE5DC] flex items-center justify-between gap-4 flex-wrap">
                 <PrimaryButton size="md" className="font-bold" />
                 <Link
                   to={`/rooms/${heroRoom.slug}`}

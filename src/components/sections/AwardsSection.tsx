@@ -6,8 +6,8 @@ export function AwardsSection() {
     <section className="py-20 md:py-28 bg-[#FAF7F2]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
         <SectionHeading
-          heading="Awards & Recognition"
-          subheading="Thank you to all our guests for their reviews and continued support."
+          heading="We've Won Awards!"
+          subheading="A big Thank You to all our guests who have left us amazing reviews."
           align="center"
           className="mb-14"
         />
