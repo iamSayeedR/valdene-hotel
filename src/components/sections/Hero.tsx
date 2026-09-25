@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import { PrimaryButton } from '../ui/PrimaryButton'
-import { SecondaryButton } from '../ui/SecondaryButton'
 
 export function Hero() {
   return (
@@ -26,9 +26,12 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
-          <SecondaryButton to="/offers" light className="w-full sm:w-auto min-w-[210px] text-sm px-9 py-4 bg-[#2B2623]/60 backdrop-blur-xs border border-white/80 text-white hover:bg-white hover:text-[#2B2623] font-bold">
+          <Link
+            to="/offers"
+            className="w-full sm:w-auto min-w-[210px] text-sm px-9 py-4 rounded-md font-bold uppercase tracking-wider bg-[#2B2623]/70 text-white border border-white hover:bg-white hover:text-[#7A2332] transition-colors shadow-xs text-center"
+          >
             View Special Offers
-          </SecondaryButton>
+          </Link>
           <PrimaryButton size="lg" className="w-full sm:w-auto min-w-[210px] text-sm px-10 py-4 shadow-md font-bold" />
         </div>
       </div>

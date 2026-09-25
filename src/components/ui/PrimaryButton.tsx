@@ -29,9 +29,9 @@ export function PrimaryButton({
       href={bookingConfig.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block whitespace-nowrap shrink-0 uppercase tracking-[0.1em] font-bold rounded-md transition-all duration-200 ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-block whitespace-nowrap shrink-0 uppercase tracking-[0.1em] font-bold rounded-md transition-all duration-200 text-center ${variants[variant]} ${sizes[size]} ${className}`}
     >
-      {children ?? bookingConfig.label}
+      {children || bookingConfig.label || 'Book Your Stay'}
     </a>
   )
 }
