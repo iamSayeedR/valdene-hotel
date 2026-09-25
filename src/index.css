@@ -33,6 +33,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.site-container {
+  width: min(1200px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, serif;
   line-height: 1.2;
@@ -60,6 +65,12 @@ button {
 :focus-visible {
   outline: 2px solid #7A2332;
   outline-offset: 3px;
+}
+
+@media print {
+  header {
+    position: static !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

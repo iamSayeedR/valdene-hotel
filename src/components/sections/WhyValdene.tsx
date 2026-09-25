@@ -26,7 +26,7 @@ const features = [
 export function WhyValdene() {
   return (
     <section className="py-20 md:py-28 bg-[#F0EAE0] border-t border-[#D8D0C5]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+      <div className="site-container">
         <SectionHeading
           heading="Taking Care of Our Wonderful Guests"
           subheading="If there's anything you wish to ask us or need assistance with, please do not hesitate to ask — we'll only be too happy to help."

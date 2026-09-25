@@ -4,7 +4,7 @@ import { hotel } from '../../data/hotel'
 export function LocationSection() {
   return (
     <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Details Left */}
           <div className="lg:col-span-5 space-y-6">

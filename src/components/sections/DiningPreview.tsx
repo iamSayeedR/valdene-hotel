@@ -5,7 +5,7 @@ import { dining } from '../../data/dining'
 export function DiningPreview() {
   return (
     <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+      <div className="site-container">
         <SectionHeading
           heading="Providing Food, Drink and Entertainment"
           subheading={dining.intro}
@@ -47,7 +47,7 @@ export function DiningPreview() {
           </div>
         </div>
 
-        {/* Evening Meals & Bar — Two Columns (Verbatim Source Copy) */}
+        {/* Evening Meals & Bar — Two Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-white border border-[#D8D0C5] overflow-hidden flex flex-col justify-between shadow-xs">
             <div>

@@ -4,7 +4,7 @@ import { SecondaryButton } from '../ui/SecondaryButton'
 export function Hero() {
   return (
     <section className="relative h-[75vh] min-h-[500px] max-h-[680px] flex items-center justify-center text-white overflow-hidden bg-[#2B2623]">
-      {/* Background Image */}
+      {/* Full Viewport Background Image */}
       <div className="absolute inset-0">
         <img
           src="https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/Rooms_Cover.jpg?fit=1024%2C600&ssl=1"
@@ -15,8 +15,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2B2623]/90 via-[#2B2623]/50 to-[#2B2623]/40" />
       </div>
 
-      {/* Hero Content */}
-      <div className="relative z-10 max-w-[1320px] mx-auto px-6 text-center flex flex-col items-center py-10">
+      {/* Hero Content inside Centered Container */}
+      <div className="relative z-10 site-container text-center flex flex-col items-center py-10">
         <h1 className="font-serif font-bold text-white text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[1.05] mb-6 drop-shadow-lg max-w-5xl">
           Valdene Hotel
         </h1>

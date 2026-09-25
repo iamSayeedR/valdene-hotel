@@ -11,7 +11,7 @@ export function ReviewsSection() {
 
   return (
     <section className="py-20 md:py-28 bg-[#F0EAE0] border-t border-[#D8D0C5]">
-      <div className="max-w-[900px] mx-auto px-6 text-center">
+      <div className="site-container text-center">
         <SectionHeading
           heading="Our Guests Love Us"
           subheading="Genuine reviews from guests who have stayed at the Valdene Hotel."
@@ -19,13 +19,13 @@ export function ReviewsSection() {
           className="mb-14"
         />
 
-        <div className="bg-white p-8 sm:p-12 md:p-14 border border-[#D8D0C5] text-center shadow-sm">
+        <div className="max-w-[850px] mx-auto bg-white p-8 sm:p-12 md:p-14 border border-[#D8D0C5] text-center shadow-sm">
           <span className="font-serif text-6xl text-[#7A2332] leading-none block mb-4 select-none">“</span>
-          <blockquote className="font-serif text-xl sm:text-2xl md:text-[1.5rem] text-[#1E1E1E] italic leading-relaxed mb-8 max-w-[720px] mx-auto font-normal">
+          <blockquote className="font-serif text-xl sm:text-2xl md:text-[1.5rem] text-[#2B2623] italic leading-relaxed mb-8 max-w-[720px] mx-auto font-normal">
             {current.text}
           </blockquote>
           <div>
-            <span className="text-sm font-bold text-[#1E1E1E] block">
+            <span className="text-sm font-bold text-[#2B2623] block">
               {current.author}
             </span>
             <span className="text-xs tracking-widest uppercase text-[#7A2332] font-semibold mt-1 block">
@@ -36,7 +36,7 @@ export function ReviewsSection() {
           <div className="flex items-center justify-between mt-10 pt-6 border-t border-[#EBE5DC]">
             <button
               onClick={prev}
-              className="text-xs uppercase tracking-widest font-bold text-[#1E1E1E] hover:text-[#7A2332] transition-colors py-2 px-3"
+              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-2 px-3"
               aria-label="Previous review"
             >
               ← Previous
@@ -55,7 +55,7 @@ export function ReviewsSection() {
             </div>
             <button
               onClick={next}
-              className="text-xs uppercase tracking-widest font-bold text-[#1E1E1E] hover:text-[#7A2332] transition-colors py-2 px-3"
+              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-2 px-3"
               aria-label="Next review"
             >
               Next →
@@ -67,7 +67,7 @@ export function ReviewsSection() {
           href={hotel.social.tripadvisor}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-10 text-xs uppercase tracking-widest font-bold text-[#1E1E1E] hover:text-[#7A2332] transition-colors border-b-2 border-[#7A2332] pb-1"
+          className="inline-block mt-10 text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors border-b-2 border-[#7A2332] pb-1"
         >
           Read All Guest Reviews on TripAdvisor ↗
         </a>

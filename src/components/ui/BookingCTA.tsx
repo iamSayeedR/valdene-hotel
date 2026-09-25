@@ -12,7 +12,7 @@ export function BookingCTA({
 }: BookingCTAProps) {
   return (
     <section className="bg-[#7A2332] text-white py-20 md:py-28 px-6">
-      <div className="max-w-[1280px] mx-auto text-center">
+      <div className="site-container text-center">
         <span className="text-xs tracking-[0.25em] uppercase font-bold text-amber-200 block mb-4">
           Direct Booking Guaranteed Best Rate
         </span>

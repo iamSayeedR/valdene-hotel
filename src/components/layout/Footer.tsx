@@ -4,7 +4,7 @@ import { hotel } from '../../data/hotel'
 export function Footer() {
   return (
     <footer className="bg-[#2B2623] text-white border-t border-white/10">
-      <div className="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 md:py-20">
+      <div className="site-container py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16">
           {/* Column 1: Hotel Identity */}
           <div className="md:col-span-5 space-y-5">
@@ -50,12 +50,10 @@ export function Footer() {
             <nav className="flex flex-col gap-3 text-[15px]" aria-label="Footer navigation">
               {[
                 { to: '/', label: 'Home' },
-                { to: '/rooms', label: 'All 10 Rooms' },
-                { to: '/dining', label: 'Meal Options' },
-                { to: '/offers', label: 'Special Offers' },
+                { to: '/offers', label: 'Special offers' },
+                { to: '/rooms', label: 'Rooms' },
+                { to: '/dining', label: 'Meal options' },
                 { to: '/explore-blackpool', label: 'Visit Blackpool' },
-                { to: '/about', label: 'About Us' },
-                { to: '/contact', label: 'Contact Us' },
                 { to: '/careers', label: 'Careers' },
               ].map((link) => (
                 <Link
@@ -104,8 +102,8 @@ export function Footer() {
       </div>
 
       {/* Bottom Legal Bar */}
-      <div className="border-t border-white/10 py-6 px-6 lg:px-10 bg-[#1E1A18]">
-        <div className="max-w-[1320px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+      <div className="border-t border-white/10 py-6 bg-[#1E1A18]">
+        <div className="site-container flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>© {new Date().getFullYear()} Valdene Hotel Blackpool. All rights reserved.</p>
           <p>16 Cocker Street, Blackpool FY1 2BY</p>
         </div>

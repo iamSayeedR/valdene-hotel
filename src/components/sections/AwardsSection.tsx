@@ -4,7 +4,7 @@ import { hotel } from '../../data/hotel'
 export function AwardsSection() {
   return (
     <section className="py-20 md:py-28 bg-[#FAF7F2]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
+      <div className="site-container text-center">
         <SectionHeading
           heading="We've Won Awards!"
           subheading="A big Thank You to all our guests who have left us amazing reviews."

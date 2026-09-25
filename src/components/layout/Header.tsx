@@ -32,7 +32,7 @@ export function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAF7F2] border-b border-[#D8D0C5] shadow-xs">
         {/* Top Contact & Announcement Bar */}
         <div className="bg-[#F4EFE6] text-[#2B2623] border-b border-[#D8D0C5] py-2 hidden lg:block">
-          <div className="max-w-[1320px] mx-auto px-6 lg:px-10 flex justify-between items-center text-xs">
+          <div className="site-container flex justify-between items-center text-xs">
             <span className="tracking-widest uppercase font-bold text-[#7A2332] text-[11px]">
               Family-Run Ensuite Accommodation · Est. 1997
             </span>
@@ -49,7 +49,7 @@ export function Header() {
         </div>
 
         {/* Main Navigation Bar */}
-        <div className="max-w-[1320px] mx-auto px-6 lg:px-10">
+        <div className="site-container">
           <div className="flex items-center justify-between h-20 lg:h-[84px]">
             {/* Logo & Brand */}
             <Link to="/" className="flex items-center gap-3.5 group shrink-0 py-1">
@@ -109,7 +109,7 @@ export function Header() {
         </div>
       </header>
 
-      {/* Spacer so page content never hides behind fixed header */}
+      {/* Fixed Header Spacer */}
       <div className="h-[80px] lg:h-[124px]" />
 
       <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} navLinks={navLinks} />
