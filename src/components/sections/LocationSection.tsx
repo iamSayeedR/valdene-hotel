@@ -3,9 +3,9 @@ import { hotel } from '../../data/hotel'
 
 export function LocationSection() {
   return (
-    <section className="py-24 md:py-32 bg-[#FAF7F2]">
+    <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]/40">
       <div className="site-container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Contact Details */}
           <div className="lg:col-span-5 space-y-6">
             <SectionHeading
@@ -23,21 +23,21 @@ export function LocationSection() {
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-[#D8D0C5]">
+              <div className="pt-3 border-t border-[#D8D0C5]/60">
                 <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-1">Phone</span>
                 <a href={hotel.contact.phoneHref} className="font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors">
                   {hotel.contact.phone}
                 </a>
               </div>
 
-              <div className="pt-3 border-t border-[#D8D0C5]">
+              <div className="pt-3 border-t border-[#D8D0C5]/60">
                 <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-1">Mobile</span>
                 <a href={hotel.contact.mobileHref} className="font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors">
                   {hotel.contact.mobile}
                 </a>
               </div>
 
-              <div className="pt-3 border-t border-[#D8D0C5]">
+              <div className="pt-3 border-t border-[#D8D0C5]/60">
                 <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-1">Email</span>
                 <a href={hotel.contact.emailHref} className="font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors break-all">
                   {hotel.contact.email}

@@ -10,9 +10,9 @@ export function BookingCTA({
   subtext = 'Book your stay at Valdene Hotel directly with Bob & Linda for our best rates.',
 }: BookingCTAProps) {
   return (
-    <section className="bg-[#7A2332] text-white py-20 md:py-24">
+    <section className="bg-[#7A2332] text-white py-16 md:py-20">
       <div className="site-container text-center">
-        <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight max-w-3xl mx-auto uppercase tracking-wide">
+        <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 leading-tight max-w-3xl mx-auto uppercase tracking-wide">
           {heading}
         </h2>
 
@@ -23,7 +23,7 @@ export function BookingCTA({
         )}
 
         <div className="flex justify-center items-center">
-          <PrimaryButton size="lg" className="px-10 py-4 bg-white text-[#7A2332] hover:bg-[#F4EFE6] font-bold shadow-sm" />
+          <PrimaryButton variant="white" size="lg" className="shadow-sm font-bold" />
         </div>
       </div>
     </section>

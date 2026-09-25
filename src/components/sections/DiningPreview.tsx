@@ -4,73 +4,76 @@ import { dining } from '../../data/dining'
 
 export function DiningPreview() {
   return (
-    <section className="py-24 md:py-32 bg-[#FAF7F2]">
+    <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]/40">
       <div className="site-container">
         <SectionHeading
           heading="Providing Food, Drink and Entertainment"
           subheading={dining.intro}
           align="center"
-          className="mb-16"
+          className="mb-14"
         />
 
-        {/* Editorial Food Section 1: Breakfast */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 bg-white border border-[#D8D0C5] overflow-hidden mb-12 shadow-xs">
-          <div className="lg:col-span-6 aspect-[4/3] lg:aspect-auto bg-[#F0EAE0]">
+        {/* Section 2: Breakfast (Vertically Centered 2-Column Split) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white border border-[#D8D0C5] p-6 sm:p-8 lg:p-10 shadow-xs mb-12">
+          <div className="lg:col-span-6 aspect-[4/3] bg-[#F0EAE0] overflow-hidden">
             <img
               src={dining.breakfast.image}
               alt={dining.breakfast.imageAlt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="lg:col-span-6 p-8 md:p-12 flex flex-col justify-center">
-            <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold mb-2">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-4">
+            <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block">
               Served Fresh Each Morning
             </span>
-            <h3 className="font-serif text-3xl text-[#2B2623] font-bold mb-4">
+
+            <h3 className="font-serif text-2xl sm:text-3xl text-[#2B2623] font-bold">
               Breakfast
             </h3>
-            <p className="text-base text-[#5C5650] leading-relaxed mb-6 font-normal">
+
+            <p className="text-base text-[#5C5650] leading-relaxed font-normal">
               {dining.breakfast.description}
             </p>
-            <div className="bg-[#FAF7F2] p-5 border border-[#D8D0C5]">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#2B2623] font-semibold">
-                <li>✓ Full English breakfast</li>
-                <li>✓ Light breakfast</li>
-                <li>✓ Vegetarian breakfast</li>
-                <li>✓ Cereals & fresh fruit</li>
+
+            <div className="bg-[#FAF7F2] p-4 border border-[#D8D0C5] mt-2">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-[#2B2623] font-semibold">
+                <li className="flex items-center gap-2"><span className="text-[#7A2332]">✓</span> Full English breakfast</li>
+                <li className="flex items-center gap-2"><span className="text-[#7A2332]">✓</span> Light breakfast</li>
+                <li className="flex items-center gap-2"><span className="text-[#7A2332]">✓</span> Vegetarian breakfast</li>
+                <li className="flex items-center gap-2"><span className="text-[#7A2332]">✓</span> Cereals & fresh fruit</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Editorial Food Section 2: Evening Meals & Bar */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
-          <div className="bg-white border border-[#D8D0C5] p-8 flex flex-col justify-between shadow-xs">
-            <div>
-              <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-2">
+        {/* Section 3: Evening Meals & Bar (Balanced Two Columns) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white border border-[#D8D0C5] p-6 sm:p-8 flex flex-col justify-between shadow-xs">
+            <div className="space-y-3">
+              <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block">
                 Evening Menu
               </span>
-              <h4 className="font-serif text-2xl text-[#2B2623] font-bold mb-3">Evening Meal</h4>
-              <p className="text-base text-[#5C5650] leading-relaxed mb-6 font-normal">
+              <h4 className="font-serif text-xl sm:text-2xl text-[#2B2623] font-bold">Evening Meal</h4>
+              <p className="text-base text-[#5C5650] leading-relaxed font-normal">
                 {dining.eveningMeal.description}
               </p>
             </div>
-            <div className="pt-4 border-t border-[#EBE5DC]">
+            <div className="pt-4 mt-6 border-t border-[#EBE5DC]">
               <span className="text-xs text-[#2B2623] font-bold uppercase tracking-wider">Starters · Mains · Summer Salads</span>
             </div>
           </div>
 
-          <div className="bg-[#2B2623] text-white p-8 flex flex-col justify-between shadow-xs">
-            <div>
-              <span className="text-xs uppercase tracking-widest text-amber-300 font-bold block mb-2">
+          <div className="bg-[#2B2623] text-white p-6 sm:p-8 flex flex-col justify-between shadow-xs">
+            <div className="space-y-3">
+              <span className="text-xs uppercase tracking-widest text-amber-300 font-bold block">
                 Licensed Bar & Lounge
               </span>
-              <h4 className="font-serif text-2xl text-white font-bold mb-3">The Bar</h4>
-              <p className="text-base text-white/90 leading-relaxed mb-6 font-normal">
+              <h4 className="font-serif text-xl sm:text-2xl text-white font-bold">The Bar</h4>
+              <p className="text-base text-white/90 leading-relaxed font-normal">
                 {dining.bar.description}
               </p>
             </div>
-            <div className="pt-4 border-t border-white/20">
+            <div className="pt-4 mt-6 border-t border-white/20">
               <span className="text-xs text-amber-100 font-semibold uppercase tracking-wider">Spirits · Beers · Wines · Retro Games Machine</span>
             </div>
           </div>

@@ -10,21 +10,23 @@ export function ReviewsSection() {
   const current = reviews[idx]
 
   return (
-    <section className="py-24 md:py-32 bg-[#FAF7F2]">
-      <div className="site-container max-w-3xl text-center">
+    <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]/40">
+      <div className="site-container">
         <SectionHeading
           heading="Our Guests Love Us"
-          subheading="Genuine reviews from guests who have stayed at Valdene Hotel."
+          subheading="Genuine TripAdvisor reviews from guests who have stayed at Valdene Hotel."
           align="center"
           className="mb-12"
         />
 
-        <div className="py-6">
-          <p className="text-[#7A2332] text-lg font-bold mb-4">★★★★★</p>
-          <blockquote className="font-serif text-xl sm:text-2xl text-[#2B2623] italic leading-relaxed mb-6 font-normal max-w-2xl mx-auto">
+        {/* Bounded Testimonial Card Container */}
+        <div className="bg-white p-8 sm:p-12 border border-[#D8D0C5] shadow-xs max-w-2xl mx-auto text-center rounded-sm">
+          <p className="text-[#7A2332] text-lg font-bold mb-3">★★★★★</p>
+          <blockquote className="font-serif text-lg sm:text-xl text-[#2B2623] italic leading-relaxed mb-6 font-normal">
             "{current.text}"
           </blockquote>
-          <div className="mb-8">
+
+          <div className="mb-6">
             <span className="text-base font-bold text-[#2B2623] block">
               {current.author}
             </span>
@@ -33,10 +35,10 @@ export function ReviewsSection() {
             </span>
           </div>
 
-          <div className="flex items-center justify-between pt-6 border-t border-[#D8D0C5]">
+          <div className="flex items-center justify-between pt-5 border-t border-[#EBE5DC]">
             <button
               onClick={prev}
-              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-2 px-3"
+              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-1.5 px-3"
               aria-label="Previous review"
             >
               ← Previous
@@ -55,7 +57,7 @@ export function ReviewsSection() {
             </div>
             <button
               onClick={next}
-              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-2 px-3"
+              className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-1.5 px-3"
               aria-label="Next review"
             >
               Next →
@@ -63,14 +65,16 @@ export function ReviewsSection() {
           </div>
         </div>
 
-        <a
-          href={hotel.social.tripadvisor}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-8 text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors border-b border-[#7A2332] pb-0.5"
-        >
-          Read All Guest Reviews on TripAdvisor ↗
-        </a>
+        <div className="text-center mt-8">
+          <a
+            href={hotel.social.tripadvisor}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors border-b border-[#7A2332] pb-0.5"
+          >
+            Read All Guest Reviews on TripAdvisor ↗
+          </a>
+        </div>
       </div>
     </section>
   )

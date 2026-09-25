@@ -7,10 +7,10 @@ export function RoomsPreview() {
   const previewRooms = rooms.filter(r => ['room-6', 'room-4', 'room-7'].includes(r.id))
 
   return (
-    <section className="py-24 md:py-32 bg-[#FAF7F2]">
+    <section className="py-20 md:py-28 bg-[#FAF7F2]">
       <div className="site-container">
         {/* Section Heading & Inline Amenities List */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <SectionHeading
               heading="Rooms"
@@ -33,26 +33,26 @@ export function RoomsPreview() {
         </div>
 
         {/* Photography-Led 3-Column Room Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {previewRooms.map((room) => (
-            <article key={room.id} className="flex flex-col justify-between group">
+            <article key={room.id} className="bg-white border border-[#D8D0C5] p-5 flex flex-col justify-between group shadow-xs">
               <div>
-                <div className="relative aspect-[16/10] overflow-hidden bg-[#F0EAE0] mb-5 shadow-xs">
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#F0EAE0] mb-4">
                   <img
                     src={room.image}
                     alt={room.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <span className="absolute top-4 left-4 bg-[#2B2623]/90 text-white text-[10px] uppercase tracking-widest px-3 py-1 font-bold">
                     {room.floor}
                   </span>
                 </div>
 
-                <span className="text-[11px] uppercase tracking-widest text-[#7A2332] font-bold block mb-1.5">
+                <span className="text-[11px] uppercase tracking-widest text-[#7A2332] font-bold block mb-1">
                   {room.typeLabel}
                 </span>
 
-                <h3 className="font-serif text-2xl text-[#2B2623] font-bold mb-2 group-hover:text-[#7A2332] transition-colors">
+                <h3 className="font-serif text-xl font-bold text-[#2B2623] mb-2 group-hover:text-[#7A2332] transition-colors">
                   <Link to={`/rooms/${room.slug}`}>{room.name}</Link>
                 </h3>
 
@@ -62,7 +62,7 @@ export function RoomsPreview() {
               </div>
 
               <div>
-                <div className="text-xs font-bold text-[#2B2623] mb-4 pb-3 border-b border-[#D8D0C5]/60">
+                <div className="text-xs font-bold text-[#2B2623] mb-3 pb-3 border-b border-[#EBE5DC]">
                   {room.bed}
                 </div>
 
