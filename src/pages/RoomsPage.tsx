@@ -10,18 +10,17 @@ export function RoomsPage() {
   const filteredRooms = filter === 'all' ? rooms : rooms.filter(r => r.type === filter)
 
   return (
-    <div className="pt-32 pb-20 bg-[#FAF7F2]">
+    <div className="pt-28 pb-16 bg-[#FAF7F2]">
       {/* Header Banner */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
+      <div className="site-container mb-12 text-center">
         <SectionHeading
-          eyebrow="Accommodations"
           heading="Ensuite Rooms at Valdene Hotel"
-          subheading="Explore our complete collection of 10 comfortable ensuite rooms. Every room features full ensuite bathroom facilities, flat screen TV with Freeview, free Wi-Fi, tea and coffee tray, safe, hairdryer, and central heating."
+          subheading="Every room features full ensuite bathroom facilities, flat screen TV with Freeview, free Wi-Fi, tea and coffee tray, safe, hairdryer, and central heating."
           align="center"
         />
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center items-center gap-3 mt-10">
+        <div className="flex flex-wrap justify-center items-center gap-3 mt-8">
           {[
             { key: 'all', label: 'All Rooms (10)' },
             { key: 'double', label: 'Double Rooms (3)' },
@@ -32,10 +31,10 @@ export function RoomsPage() {
             <button
               key={tab.key}
               onClick={() => setFilter(tab.key as any)}
-              className={`px-5 py-2.5 text-xs font-semibold uppercase tracking-widest transition-all ${
+              className={`px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all ${
                 filter === tab.key
-                  ? 'bg-[#7A2332] text-white shadow-sm'
-                  : 'bg-white text-[#1E1E1E] border border-[#D8D0C5] hover:bg-[#F0EAE0]'
+                  ? 'bg-[#7A2332] text-white shadow-xs'
+                  : 'bg-white text-[#2B2623] border border-[#D8D0C5] hover:bg-[#F0EAE0]'
               }`}
             >
               {tab.label}
@@ -44,9 +43,9 @@ export function RoomsPage() {
         </div>
       </div>
 
-      {/* Rooms Grid (All 10 rooms) */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* Rooms Grid */}
+      <div className="site-container mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredRooms.map((room) => (
             <RoomCard key={room.id} room={room} />
           ))}

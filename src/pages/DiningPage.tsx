@@ -6,9 +6,8 @@ export function DiningPage() {
   return (
     <div className="pt-28 pb-16 bg-[#FAF7F2]">
       {/* Page Header */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
+      <div className="site-container mb-12 text-center">
         <SectionHeading
-          eyebrow="Food & Drink"
           heading="Meal Options at Valdene Hotel"
           subheading={dining.intro}
           align="center"
@@ -16,10 +15,10 @@ export function DiningPage() {
       </div>
 
       {/* Breakfast Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white border border-[#DDD6CC]/60 p-8 lg:p-12 shadow-sm">
+      <section className="site-container mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-white border border-[#D8D0C5] p-6 lg:p-10 shadow-xs">
           <div className="lg:col-span-6">
-            <div className="aspect-[4/3] bg-[#F0EAE0] overflow-hidden rounded-sm">
+            <div className="aspect-[4/3] bg-[#F0EAE0] overflow-hidden">
               <img
                 src={dining.breakfast.image}
                 alt={dining.breakfast.imageAlt}
@@ -28,12 +27,12 @@ export function DiningPage() {
             </div>
           </div>
           <div className="lg:col-span-6">
-            <span className="text-[10px] uppercase tracking-widest text-[#7A2332] font-medium block mb-2">Morning Selection</span>
-            <h2 className="font-serif text-3xl text-[#1E1E1E] mb-4">{dining.breakfast.title}</h2>
-            <p className="text-sm text-[#6B6560] leading-relaxed mb-6">{dining.breakfast.description}</p>
-            <div className="bg-[#FAF7F2] p-6 border border-[#DDD6CC]/60">
-              <h4 className="text-xs uppercase tracking-widest text-[#1E1E1E] font-medium mb-3">Breakfast Options Include:</h4>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#6B6560]">
+            <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-2">Morning Selection</span>
+            <h2 className="font-serif text-2xl sm:text-3xl text-[#2B2623] mb-3">{dining.breakfast.title}</h2>
+            <p className="text-base text-[#5C5650] leading-relaxed mb-6 font-normal">{dining.breakfast.description}</p>
+            <div className="bg-[#FAF7F2] p-5 border border-[#D8D0C5]">
+              <h4 className="text-xs uppercase tracking-widest text-[#2B2623] font-bold mb-3">Breakfast Options Include:</h4>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#2B2623] font-semibold">
                 {dining.breakfast.options.map((opt, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <span className="text-[#7A2332]">✓</span> {opt}
@@ -46,10 +45,10 @@ export function DiningPage() {
       </section>
 
       {/* Evening Meal Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white border border-[#DDD6CC]/60 p-8 lg:p-12 shadow-sm">
+      <section className="site-container mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-white border border-[#D8D0C5] p-6 lg:p-10 shadow-xs">
           <div className="lg:col-span-6 lg:order-2">
-            <div className="aspect-[4/3] bg-[#F0EAE0] overflow-hidden rounded-sm">
+            <div className="aspect-[4/3] bg-[#F0EAE0] overflow-hidden">
               <img
                 src={dining.eveningMeal.image}
                 alt={dining.eveningMeal.imageAlt}
@@ -58,12 +57,12 @@ export function DiningPage() {
             </div>
           </div>
           <div className="lg:col-span-6 lg:order-1">
-            <span className="text-[10px] uppercase tracking-widest text-[#7A2332] font-medium block mb-2">Dinner Selection</span>
-            <h2 className="font-serif text-3xl text-[#1E1E1E] mb-4">{dining.eveningMeal.title}</h2>
-            <p className="text-sm text-[#6B6560] leading-relaxed mb-6">{dining.eveningMeal.description}</p>
-            <div className="bg-[#FAF7F2] p-6 border border-[#DDD6CC]/60">
-              <h4 className="text-xs uppercase tracking-widest text-[#1E1E1E] font-medium mb-3">Evening Meal Options Include:</h4>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#6B6560]">
+            <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-2">Dinner Selection</span>
+            <h2 className="font-serif text-2xl sm:text-3xl text-[#2B2623] mb-3">{dining.eveningMeal.title}</h2>
+            <p className="text-base text-[#5C5650] leading-relaxed mb-6 font-normal">{dining.eveningMeal.description}</p>
+            <div className="bg-[#FAF7F2] p-5 border border-[#D8D0C5]">
+              <h4 className="text-xs uppercase tracking-widest text-[#2B2623] font-bold mb-3">Evening Meal Options Include:</h4>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#2B2623] font-semibold">
                 {dining.eveningMeal.options.map((opt, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <span className="text-[#7A2332]">✓</span> {opt}
@@ -76,11 +75,11 @@ export function DiningPage() {
       </section>
 
       {/* Bar Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-20">
-        <div className="bg-[#1E1E1E] text-white p-8 sm:p-14 text-center max-w-4xl mx-auto border border-white/10 shadow-xl">
-          <span className="text-[10px] uppercase tracking-widest text-[#9A9390] block mb-2">Hospitality & Games</span>
-          <h2 className="font-serif text-3xl text-white mb-6">{dining.bar.title}</h2>
-          <p className="text-sm text-[#F0EAE0]/90 leading-relaxed font-light max-w-2xl mx-auto">
+      <section className="site-container mb-16">
+        <div className="bg-[#2B2623] text-white p-8 sm:p-12 text-center max-w-3xl mx-auto border border-white/10 shadow-xs">
+          <span className="text-xs uppercase tracking-widest text-amber-300 font-bold block mb-2">Licensed Bar & Lounge</span>
+          <h2 className="font-serif text-2xl sm:text-3xl text-white mb-4">{dining.bar.title}</h2>
+          <p className="text-base text-white/90 leading-relaxed font-normal max-w-2xl mx-auto">
             {dining.bar.description}
           </p>
         </div>
