@@ -45,11 +45,11 @@ export const hotel = {
   ],
   about: {
     intro: 'Taking care of our wonderful guests',
-    body: `We take pride in welcoming guests through the door and making sure they get everything from a great night's sleep to a fantastic breakfast in the morning. If there's anything you wish to ask us or need assistance with, please do not hesitate to ask — we'll only be too happy to help.`,
-    bar: `Our friendly, well stocked bar is ready to serve you a great selection of spirits, beers, ciders, wines and gin collection — all at great prices. Why not have a go on our retro 1980's table top games machine. We serve a selection of freshly-cooked hot or cold snacks.`,
+    body: `We take pride in welcoming guests through the door and making sure they get everything from a great night's sleep to a fantastic breakfast in the morning. If there's anything you wish to ask us or need assistance with, please do not hesitate to ask. We will only be too happy to help.`,
+    bar: `Our friendly, well stocked bar is ready to serve you a great selection of spirits, beers, ciders, wines and gin collection, all at great prices. Why not have a go on our retro 1980's table top games machine. We serve a selection of freshly-cooked hot or cold snacks.`,
   },
   seo: {
-    title: 'Valdene Hotel Blackpool — Family-Run Ensuite Accommodation',
+    title: 'Valdene Hotel Blackpool - Family-Run Ensuite Accommodation',
     description: 'Award-winning family-run ensuite accommodation in the heart of Blackpool. Est. 1997. Comfortable rooms, great breakfast, excellent location.',
   },
 }

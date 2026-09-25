@@ -13,13 +13,13 @@ export const reviews = [
   },
   {
     id: 3,
-    text: "We stayed here for 4 nights. First, the owners are very nice, very proud of their cute little hotel. It's clean, it's tidy, the breakfast is perfect. The bedroom was tidy, the bed — best sleep I have had in years. All that aside, I loved this little hotel. Would I stay here again? Absolutely 100%.",
+    text: "We stayed here for 4 nights. First, the owners are very nice, very proud of their cute little hotel. It's clean, it's tidy, the breakfast is perfect. The bedroom was tidy, the bed: best sleep I have had in years. All that aside, I loved this little hotel. Would I stay here again? Absolutely 100%.",
     author: 'redbadblud',
     source: 'TripAdvisor',
   },
   {
     id: 4,
-    text: "Best hotel in the north west by far. I first stayed here as an 18 year old in 1982 — it was great then and it's even better now. Was a fab hotel. It's Blackpool at its best. Three cheers for the Valdene — it's so close to all that Blackpool has to offer and is a very clean and well run establishment.",
+    text: "Best hotel in the north west by far. I first stayed here as an 18 year old in 1982. It was great then and it's even better now. Was a fab hotel. It's Blackpool at its best. Three cheers for the Valdene, it's so close to all that Blackpool has to offer and is a very clean and well run establishment.",
     author: '732alans',
     source: 'TripAdvisor',
   },

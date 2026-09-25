@@ -8,7 +8,6 @@ export function ExplorePage() {
     <div className="pt-28 pb-16 bg-[#FAF7F2]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
         <SectionHeading
-          eyebrow="Local Attractions"
           heading="Visit Blackpool"
           subheading="Valdene Hotel is conveniently situated close to Blackpool's most famous landmarks, theatres, piers, and entertainment venues."
           align="center"
@@ -26,7 +25,7 @@ export function ExplorePage() {
         ))}
       </div>
 
-      <BookingCTA subtext="Stay at the Valdene Hotel — your ideal base for exploring Blackpool." />
+      <BookingCTA subtext="Stay at the Valdene Hotel, your ideal base for exploring Blackpool." />
     </div>
   )
 }
