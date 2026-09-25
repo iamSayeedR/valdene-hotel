@@ -28,8 +28,8 @@ body {
 }
 
 /*
-  Tailwind v4 custom utility — this registers .site-container
-  as a first-class Tailwind utility that cannot be overridden.
+  Tailwind v4 custom utility - registers .site-container
+  as a first-class Tailwind utility.
 */
 @utility site-container {
   width: 100%;
@@ -38,6 +38,20 @@ body {
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+/* Hero Special Offers Button Hover Fix */
+.btn-hero-offers {
+  background-color: rgba(43, 38, 35, 0.75) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-hero-offers:hover {
+  background-color: #ffffff !important;
+  color: #7A2332 !important;
+  border-color: #ffffff !important;
 }
 
 h1 {

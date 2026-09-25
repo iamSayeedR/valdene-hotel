@@ -28,7 +28,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
           <Link
             to="/offers"
-            className="w-full sm:w-auto min-w-[210px] text-sm px-9 py-4 rounded-md font-bold uppercase tracking-wider bg-[#2B2623]/70 text-white border border-white hover:bg-white hover:text-[#7A2332] transition-colors shadow-xs text-center"
+            className="btn-hero-offers w-full sm:w-auto min-w-[210px] text-sm px-9 py-4 rounded-md font-bold uppercase tracking-wider shadow-xs text-center inline-block"
           >
             View Special Offers
           </Link>
