@@ -7,17 +7,13 @@ interface BookingCTAProps {
 }
 
 export function BookingCTA({
-  heading = 'Ready to Book Your Stay at Valdene Hotel?',
-  subtext = 'Book directly with Bob & Linda for our best rates, personal service, and warmest welcome.',
+  heading = 'READY TO STAY IN BLACKPOOL?',
+  subtext = 'Book your stay at Valdene Hotel directly with Bob & Linda for our best rates and personal service.',
 }: BookingCTAProps) {
   return (
-    <section className="bg-[#7A2332] text-white py-20 md:py-28 px-6">
+    <section className="bg-[#7A2332] text-white py-20 md:py-24 border-t border-b border-[#5C1A26]">
       <div className="site-container text-center">
-        <span className="text-xs tracking-[0.25em] uppercase font-bold text-amber-200 block mb-4">
-          Direct Booking Guaranteed Best Rate
-        </span>
-
-        <h2 className="font-serif text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
+        <h2 className="font-serif text-[2.25rem] sm:text-[2.75rem] md:text-[3.25rem] font-bold text-white mb-4 leading-tight max-w-4xl mx-auto uppercase tracking-wide">
           {heading}
         </h2>
 
@@ -36,10 +32,6 @@ export function BookingCTA({
             Call: {hotel.contact.phone}
           </a>
         </div>
-
-        <p className="mt-8 text-sm text-white/80">
-          or email us directly: <a href={hotel.contact.emailHref} className="underline text-white font-semibold hover:text-amber-200">{hotel.contact.email}</a>
-        </p>
       </div>
     </section>
   )

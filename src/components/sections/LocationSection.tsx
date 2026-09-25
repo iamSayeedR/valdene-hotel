@@ -6,7 +6,7 @@ export function LocationSection() {
     <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Details Left */}
+          {/* Left Contact Details */}
           <div className="lg:col-span-5 space-y-6">
             <SectionHeading
               heading="Contact Us"
@@ -58,7 +58,7 @@ export function LocationSection() {
             </div>
           </div>
 
-          {/* Guaranteed Working Google Map Right */}
+          {/* Right Working Map */}
           <div className="lg:col-span-7">
             <div className="bg-white border border-[#D8D0C5] p-3 shadow-xs flex flex-col">
               <div className="aspect-[4/3] w-full bg-[#EBE5DC] relative overflow-hidden">

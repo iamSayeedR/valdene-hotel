@@ -13,93 +13,71 @@ export function DiningPreview() {
           className="mb-16"
         />
 
-        {/* Breakfast Showcase — Verbatim Source Copy */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white border border-[#D8D0C5] overflow-hidden mb-16 shadow-sm">
-          <div className="aspect-[4/3] lg:aspect-auto lg:min-h-[440px] bg-[#F0EAE0]">
+        {/* Editorial Food Section 1: Breakfast */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 bg-white border border-[#D8D0C5] overflow-hidden mb-12 shadow-sm">
+          <div className="lg:col-span-6 aspect-[4/3] lg:aspect-auto lg:min-h-[400px] bg-[#F0EAE0]">
             <img
               src={dining.breakfast.image}
               alt={dining.breakfast.imageAlt}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center">
-            <span className="text-xs uppercase tracking-[0.18em] text-[#7A2332] font-bold mb-3">
+          <div className="lg:col-span-6 p-8 md:p-12 flex flex-col justify-center">
+            <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold mb-2">
               Served Fresh Each Morning
             </span>
-            <h3 className="font-serif text-[1.75rem] md:text-[2.25rem] text-[#2B2623] font-bold mb-5 leading-tight">
-              {dining.breakfast.title}
+            <h3 className="font-serif text-3xl text-[#2B2623] font-bold mb-4">
+              Breakfast
             </h3>
-            <p className="text-[17px] text-[#5C5650] leading-[1.75] mb-8 font-normal">
+            <p className="text-[17px] text-[#5C5650] leading-relaxed mb-6 font-normal">
               {dining.breakfast.description}
             </p>
-            <div className="bg-[#FAF7F2] p-6 border border-[#D8D0C5]">
-              <h4 className="text-xs uppercase tracking-[0.18em] text-[#2B2623] font-bold mb-4">
-                Breakfast Options Include:
-              </h4>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[15px] text-[#2B2623] font-semibold">
-                {dining.breakfast.options.map((opt, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <span className="text-[#7A2332] font-extrabold">✓</span> {opt}
-                  </li>
-                ))}
+            <div className="bg-[#FAF7F2] p-5 border border-[#D8D0C5]">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#2B2623] font-semibold">
+                <li>✓ Full English breakfast</li>
+                <li>✓ Light breakfast</li>
+                <li>✓ Vegetarian breakfast</li>
+                <li>✓ Cereals & fresh fruit</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Evening Meals & Bar — Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-white border border-[#D8D0C5] overflow-hidden flex flex-col justify-between shadow-xs">
+        {/* Editorial Food Section 2: Evening Meals & Bar */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
+          <div className="bg-white border border-[#D8D0C5] p-8 flex flex-col justify-between shadow-xs">
             <div>
-              <div className="aspect-[16/10] bg-[#F0EAE0]">
-                <img
-                  src={dining.eveningMeal.image}
-                  alt={dining.eveningMeal.imageAlt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <span className="text-xs uppercase tracking-[0.18em] text-[#7A2332] font-bold block mb-2">
-                  Evening Menu
-                </span>
-                <h4 className="font-serif text-2xl text-[#2B2623] font-bold mb-3">{dining.eveningMeal.title}</h4>
-                <p className="text-[16px] text-[#5C5650] leading-relaxed font-normal">
-                  {dining.eveningMeal.description}
-                </p>
-              </div>
+              <span className="text-xs uppercase tracking-widest text-[#7A2332] font-bold block mb-2">
+                Evening Menu
+              </span>
+              <h4 className="font-serif text-2xl text-[#2B2623] font-bold mb-3">Evening Meal</h4>
+              <p className="text-[#5C5650] leading-relaxed mb-6 font-normal">
+                {dining.eveningMeal.description}
+              </p>
             </div>
-            <div className="px-8 pb-8 pt-4 border-t border-[#EBE5DC]">
+            <div className="pt-4 border-t border-[#EBE5DC]">
               <span className="text-xs text-[#2B2623] font-bold uppercase tracking-wider">Starters · Mains · Summer Salads</span>
             </div>
           </div>
 
-          <div className="bg-[#2B2623] text-white overflow-hidden flex flex-col justify-between shadow-xs">
+          <div className="bg-[#2B2623] text-white p-8 flex flex-col justify-between shadow-xs">
             <div>
-              <div className="aspect-[16/10] bg-[#1E1A18]">
-                <img
-                  src="https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/732fc899-1974-4591-9465-59553e9f4971-l.jpg?fit=1024%2C768&ssl=1"
-                  alt="Valdene Bar"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <span className="text-xs uppercase tracking-[0.18em] text-amber-300 font-bold block mb-2">
-                  Licensed Bar & Lounge
-                </span>
-                <h4 className="font-serif text-2xl text-white font-bold mb-3">{dining.bar.title}</h4>
-                <p className="text-[16px] text-white/90 leading-relaxed font-normal">
-                  {dining.bar.description}
-                </p>
-              </div>
+              <span className="text-xs uppercase tracking-widest text-amber-300 font-bold block mb-2">
+                Licensed Bar & Lounge
+              </span>
+              <h4 className="font-serif text-2xl text-white font-bold mb-3">The Bar</h4>
+              <p className="text-white/90 leading-relaxed mb-6 font-normal">
+                {dining.bar.description}
+              </p>
             </div>
-            <div className="px-8 pb-8 pt-4 border-t border-white/20">
-              <span className="text-xs text-amber-100 font-semibold uppercase tracking-wider">Spirits · Beers · Ciders · Wines · Retro Games Machine</span>
+            <div className="pt-4 border-t border-white/20">
+              <span className="text-xs text-amber-100 font-semibold uppercase tracking-wider">Spirits · Beers · Wines · Retro Games Machine</span>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <SecondaryButton to="/dining" className="bg-white">
+        <div className="text-center">
+          <SecondaryButton to="/dining" className="bg-white font-bold">
             View Meal Options →
           </SecondaryButton>
         </div>

@@ -3,25 +3,25 @@ import { SecondaryButton } from '../ui/SecondaryButton'
 
 export function Hero() {
   return (
-    <section className="relative h-[75vh] min-h-[500px] max-h-[680px] flex items-center justify-center text-white overflow-hidden bg-[#2B2623]">
-      {/* Full Viewport Background Image */}
+    <section className="relative h-[72vh] min-h-[480px] max-h-[640px] flex items-center justify-center text-white overflow-hidden bg-[#2B2623]">
+      {/* Full-Width Hotel Photography Dominates */}
       <div className="absolute inset-0">
         <img
           src="https://i0.wp.com/www.valdenehotelblackpool.com/wp-content/uploads/2021/03/Rooms_Cover.jpg?fit=1024%2C600&ssl=1"
           alt="Valdene Hotel Blackpool Exterior & Rooms"
           className="w-full h-full object-cover object-center"
         />
-        {/* Soft Vignette Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2B2623]/90 via-[#2B2623]/50 to-[#2B2623]/40" />
+        {/* Subtle Dark Vignette Overlay for High Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2B2623]/85 via-[#2B2623]/50 to-[#2B2623]/35" />
       </div>
 
       {/* Hero Content inside Centered Container */}
       <div className="relative z-10 site-container text-center flex flex-col items-center py-10">
-        <h1 className="font-serif font-bold text-white text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[1.05] mb-6 drop-shadow-lg max-w-5xl">
+        <h1 className="font-serif font-bold text-white text-[3.25rem] sm:text-[4.25rem] md:text-[5rem] leading-[1.05] mb-5 drop-shadow-lg max-w-3xl">
           Valdene Hotel
         </h1>
 
-        <p className="font-serif italic text-amber-100 text-xl sm:text-2xl md:text-[1.75rem] max-w-3xl mb-10 leading-snug drop-shadow-md font-normal">
+        <p className="font-serif italic text-amber-100 text-xl sm:text-2xl md:text-[1.65rem] max-w-2xl mb-10 leading-snug drop-shadow-md font-normal">
           Award-winning family-run ensuite accommodation in the heart of Blackpool
         </p>
 

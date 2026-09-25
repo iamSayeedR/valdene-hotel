@@ -10,22 +10,21 @@ export function ReviewsSection() {
   const current = reviews[idx]
 
   return (
-    <section className="py-20 md:py-28 bg-[#F0EAE0] border-t border-[#D8D0C5]">
-      <div className="site-container text-center">
+    <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
+      <div className="site-container max-w-3xl text-center">
         <SectionHeading
           heading="Our Guests Love Us"
-          subheading="Genuine reviews from guests who have stayed at the Valdene Hotel."
+          subheading="Genuine TripAdvisor reviews from guests who have stayed at Valdene Hotel."
           align="center"
-          className="mb-14"
+          className="mb-12"
         />
 
-        <div className="max-w-[850px] mx-auto bg-white p-8 sm:p-12 md:p-14 border border-[#D8D0C5] text-center shadow-sm">
-          <span className="font-serif text-6xl text-[#7A2332] leading-none block mb-4 select-none">“</span>
-          <blockquote className="font-serif text-xl sm:text-2xl md:text-[1.5rem] text-[#2B2623] italic leading-relaxed mb-8 max-w-[720px] mx-auto font-normal">
-            {current.text}
+        <div className="bg-white p-8 md:p-12 border border-[#D8D0C5] text-center shadow-xs">
+          <blockquote className="font-serif text-lg sm:text-xl md:text-2xl text-[#2B2623] italic leading-relaxed mb-8 max-w-2xl mx-auto font-normal">
+            "{current.text}"
           </blockquote>
           <div>
-            <span className="text-sm font-bold text-[#2B2623] block">
+            <span className="text-base font-bold text-[#2B2623] block">
               {current.author}
             </span>
             <span className="text-xs tracking-widest uppercase text-[#7A2332] font-semibold mt-1 block">
@@ -46,8 +45,8 @@ export function ReviewsSection() {
                 <button
                   key={i}
                   onClick={() => setIdx(i)}
-                  className={`h-2.5 rounded-full transition-all ${
-                    i === idx ? 'bg-[#7A2332] w-7' : 'bg-[#D8D0C5] w-2.5'
+                  className={`h-2 rounded-full transition-all ${
+                    i === idx ? 'bg-[#7A2332] w-6' : 'bg-[#D8D0C5] w-2'
                   }`}
                   aria-label={`Go to review ${i + 1}`}
                 />
@@ -67,7 +66,7 @@ export function ReviewsSection() {
           href={hotel.social.tripadvisor}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-10 text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors border-b-2 border-[#7A2332] pb-1"
+          className="inline-block mt-8 text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors border-b border-[#7A2332] pb-0.5"
         >
           Read All Guest Reviews on TripAdvisor ↗
         </a>
