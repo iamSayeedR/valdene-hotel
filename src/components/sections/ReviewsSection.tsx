@@ -10,20 +10,21 @@ export function ReviewsSection() {
   const current = reviews[idx]
 
   return (
-    <section className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#D8D0C5]">
+    <section className="py-24 md:py-32 bg-[#FAF7F2]">
       <div className="site-container max-w-3xl text-center">
         <SectionHeading
           heading="Our Guests Love Us"
-          subheading="Genuine TripAdvisor reviews from guests who have stayed at Valdene Hotel."
+          subheading="Genuine reviews from guests who have stayed at Valdene Hotel."
           align="center"
           className="mb-12"
         />
 
-        <div className="bg-white p-8 md:p-12 border border-[#D8D0C5] text-center shadow-xs">
-          <blockquote className="font-serif text-lg sm:text-xl md:text-2xl text-[#2B2623] italic leading-relaxed mb-8 max-w-2xl mx-auto font-normal">
+        <div className="py-6">
+          <p className="text-[#7A2332] text-lg font-bold mb-4">★★★★★</p>
+          <blockquote className="font-serif text-xl sm:text-2xl text-[#2B2623] italic leading-relaxed mb-6 font-normal max-w-2xl mx-auto">
             "{current.text}"
           </blockquote>
-          <div>
+          <div className="mb-8">
             <span className="text-base font-bold text-[#2B2623] block">
               {current.author}
             </span>
@@ -32,7 +33,7 @@ export function ReviewsSection() {
             </span>
           </div>
 
-          <div className="flex items-center justify-between mt-10 pt-6 border-t border-[#EBE5DC]">
+          <div className="flex items-center justify-between pt-6 border-t border-[#D8D0C5]">
             <button
               onClick={prev}
               className="text-xs uppercase tracking-widest font-bold text-[#2B2623] hover:text-[#7A2332] transition-colors py-2 px-3"

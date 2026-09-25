@@ -4,15 +4,15 @@ import { hotel } from '../../data/hotel'
 export function Footer() {
   return (
     <footer className="bg-[#2B2623] text-white border-t border-white/10">
-      <div className="site-container py-14 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10">
+      <div className="site-container py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
           {/* Column 1: Valdene Hotel Identity */}
           <div className="md:col-span-4 space-y-3">
             <Link to="/" className="block">
-              <span className="font-serif text-[24px] font-bold text-white block leading-none hover:text-amber-200 transition-colors">
+              <span className="font-serif text-[26px] font-bold text-white block leading-none hover:text-amber-200 transition-colors">
                 Valdene Hotel
               </span>
-              <span className="text-[10px] tracking-[0.2em] uppercase text-amber-300 font-bold mt-1 block">
+              <span className="text-[11px] tracking-[0.2em] uppercase text-amber-300 font-bold mt-1 block">
                 Est. 1997 · Blackpool
               </span>
             </Link>
@@ -21,7 +21,7 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Explore Links */}
+          {/* Column 2: Explore */}
           <div className="md:col-span-3">
             <h3 className="text-xs tracking-[0.2em] uppercase text-amber-300 font-bold mb-4">
               Explore
@@ -29,9 +29,9 @@ export function Footer() {
             <nav className="flex flex-col gap-2 text-sm" aria-label="Footer navigation">
               {[
                 { to: '/rooms', label: 'Rooms' },
-                { to: '/dining', label: 'Meal options' },
+                { to: '/dining', label: 'Meal Options' },
+                { to: '/offers', label: 'Special Offers' },
                 { to: '/explore-blackpool', label: 'Visit Blackpool' },
-                { to: '/offers', label: 'Special offers' },
                 { to: '/careers', label: 'Careers' },
               ].map((link) => (
                 <Link
@@ -45,14 +45,14 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Contact Details (Wider column to prevent email wrapping) */}
+          {/* Column 3: Contact (Sufficient width to prevent email wrapping) */}
           <div className="md:col-span-3 space-y-2">
             <h3 className="text-xs tracking-[0.2em] uppercase text-amber-300 font-bold mb-4">
               Contact
             </h3>
             <address className="not-italic space-y-1.5 text-sm text-white/70 font-normal">
               <p>{hotel.address.street}</p>
-              <p>{hotel.address.city}, {hotel.address.postcode}</p>
+              <p>{hotel.address.city} {hotel.address.postcode}</p>
               <p className="pt-1">
                 <a href={hotel.contact.phoneHref} className="text-white hover:text-amber-300 font-semibold transition-colors">
                   {hotel.contact.phone}
