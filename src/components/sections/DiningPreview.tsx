@@ -8,7 +8,7 @@ export function DiningPreview() {
       <div className="site-container">
         <SectionHeading
           heading="Meal Options"
-          subheading={dining.intro}
+          subheading="Tuck into our large variety of breakfast options and freshly prepared evening meals, starters, mains, and summer salads."
           align="center"
           className="mb-14"
         />
@@ -38,16 +38,11 @@ export function DiningPreview() {
           ))}
         </div>
 
-        {/* Evening Meals Summary */}
-        <div className="bg-white rounded-lg p-8 sm:p-10 shadow-sm border border-[#D8D0C5]/40 mb-12 text-center max-w-2xl mx-auto">
-          <h4 className="font-serif text-2xl text-[#2B2623] font-bold mb-3">Evening Meals</h4>
-          <p className="text-base text-[#5C5650] leading-relaxed font-normal mb-4">
-            {dining.eveningMeal.description}
-          </p>
-          <span className="text-xs text-[#7A2332] font-bold uppercase tracking-wider">Starters · Mains · Summer Salads</span>
-        </div>
-
+        {/* Section Closing Call-To-Action */}
         <div className="text-center">
+          <p className="text-sm text-[#5C5650] mb-4 font-medium">
+            Evening meals, starters, mains, and summer salads are also available for our guests.
+          </p>
           <SecondaryButton to="/dining" className="font-bold">
             View All Meal Options →
           </SecondaryButton>

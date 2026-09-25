@@ -11,17 +11,23 @@ export function Hero() {
           alt="Valdene Hotel Blackpool Exterior"
           className="w-full h-full object-cover object-center"
         />
-        {/* Subtle Dark Vignette Overlay for High Readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2B2623]/85 via-[#2B2623]/50 to-[#2B2623]/35" />
+        {/* Dark Vignette Overlay for High Contrast */}
+        <div className="absolute inset-0 bg-[#2B2623]/50 bg-gradient-to-t from-[#2B2623]/90 via-[#2B2623]/65 to-[#2B2623]/40" />
       </div>
 
       {/* Hero Content inside Centered Container */}
       <div className="relative z-10 site-container text-center flex flex-col items-center">
-        <h1 className="font-serif font-bold text-white text-[3.25rem] sm:text-[4.25rem] md:text-[5.25rem] leading-[1.05] mb-6 drop-shadow-lg max-w-3xl">
+        <h1
+          className="font-serif font-bold text-white !text-white text-[3.25rem] sm:text-[4.25rem] md:text-[5.25rem] leading-[1.05] mb-6 drop-shadow-lg max-w-3xl"
+          style={{ color: '#ffffff' }}
+        >
           Valdene Hotel
         </h1>
 
-        <p className="font-serif italic text-amber-100 text-xl sm:text-2xl md:text-[1.75rem] max-w-2xl mb-10 leading-snug drop-shadow-md font-normal">
+        <p
+          className="font-serif italic text-amber-100 !text-amber-100 text-xl sm:text-2xl md:text-[1.75rem] max-w-2xl mb-10 leading-snug drop-shadow-md font-normal"
+          style={{ color: '#fef3c7' }}
+        >
           Award-winning family-run ensuite accommodation in the heart of Blackpool
         </p>
 
