@@ -20,8 +20,8 @@ export function PrimaryButton({
   }
 
   const variants = {
-    burgundy: 'bg-[#7A2332] text-white hover:bg-[#5C1A26]',
-    white: 'bg-white text-[#7A2332] hover:bg-[#F4EFE6]',
+    burgundy: 'bg-[#7A2332] text-white hover:bg-[#5C1A26] shadow-xs',
+    white: 'bg-white text-[#7A2332] hover:bg-[#F4EFE6] shadow-xs',
   }
 
   return (
@@ -29,7 +29,7 @@ export function PrimaryButton({
       href={bookingConfig.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block whitespace-nowrap shrink-0 uppercase tracking-[0.1em] font-bold transition-colors duration-200 ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-block whitespace-nowrap shrink-0 uppercase tracking-[0.1em] font-bold rounded-md transition-all duration-200 ${variants[variant]} ${sizes[size]} ${className}`}
     >
       {children ?? bookingConfig.label}
     </a>

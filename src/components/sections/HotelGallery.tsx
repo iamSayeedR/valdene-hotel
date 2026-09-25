@@ -17,7 +17,7 @@ const galleryImages = [
 
 export function HotelGallery() {
   return (
-    <section className="py-20 md:py-28 bg-[#F0EAE0]">
+    <section className="py-24 md:py-32 bg-[#F0EAE0]">
       <div className="site-container">
         <SectionHeading
           heading="Hotel Gallery"
@@ -25,10 +25,10 @@ export function HotelGallery() {
           className="mb-12"
         />
 
-        {/* Balanced 3-Column Photography Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Balanced 3-Column Photography Grid with Soft Elevation */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {galleryImages.map((img, i) => (
-            <div key={i} className="aspect-[4/3] w-full overflow-hidden border border-[#D8D0C5] bg-[#EBE5DC] shadow-xs">
+            <div key={i} className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-[#EBE5DC] shadow-sm hover:shadow-md transition-shadow">
               <img
                 src={img.src}
                 alt={img.alt}
