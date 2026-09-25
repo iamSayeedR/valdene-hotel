@@ -54,6 +54,20 @@ body {
   border-color: #ffffff !important;
 }
 
+/* Special Offers Page - Call Us Button Hover Fix */
+.btn-call-us {
+  background-color: #FAF7F2 !important;
+  color: #7A2332 !important;
+  border: 1.5px solid #7A2332 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-call-us:hover {
+  background-color: #7A2332 !important;
+  color: #ffffff !important;
+  border-color: #7A2332 !important;
+}
+
 h1 {
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(2.25rem, 4.5vw, 4rem);

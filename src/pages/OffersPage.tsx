@@ -21,11 +21,12 @@ export function OffersPage() {
             {offersContactNote}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 border-t border-[#EBE5DC]">
-            <PrimaryButton size="lg" className="font-bold w-full sm:w-auto" />
+          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-6 border-t border-[#EBE5DC]">
+            <PrimaryButton size="lg" className="font-bold w-full sm:w-auto shadow-md" />
             <a
               href={hotel.contact.phoneHref}
-              className="text-xs uppercase tracking-widest text-[#2B2623] font-bold border border-[#D8D0C5] bg-[#FAF7F2] px-6 py-3.5 rounded-md hover:bg-[#7A2332] hover:text-white hover:border-[#7A2332] transition-all w-full sm:w-auto text-center"
+              className="inline-block uppercase tracking-[0.1em] font-bold rounded-md transition-all duration-200 bg-[#7A2332] !text-white hover:bg-[#5C1A26] shadow-md px-9 py-3.5 text-sm w-full sm:w-auto text-center whitespace-nowrap"
+              style={{ color: '#ffffff' }}
             >
               Call Us: {hotel.contact.phone}
             </a>
