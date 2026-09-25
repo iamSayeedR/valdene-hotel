@@ -28,23 +28,16 @@ body {
 }
 
 /*
-  BULLETPROOF CENTERING
-  Uses the highest-specificity selector possible so nothing can override it.
-  The .site-container class centers content with max-width 1200px.
+  Tailwind v4 custom utility — this registers .site-container
+  as a first-class Tailwind utility that cannot be overridden.
 */
-.site-container,
-div.site-container,
-section.site-container,
-nav.site-container,
-footer .site-container,
-header .site-container {
-  display: block !important;
-  width: 100% !important;
-  max-width: 1200px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 24px !important;
-  padding-right: 24px !important;
+@utility site-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 h1 {
@@ -92,9 +85,7 @@ button {
 }
 
 @media print {
-  header {
-    position: static !important;
-  }
+  header { position: static !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {

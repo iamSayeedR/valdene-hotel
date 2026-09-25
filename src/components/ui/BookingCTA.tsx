@@ -1,4 +1,4 @@
-import { PrimaryButton } from './PrimaryButton'
+import { bookingConfig } from '../../config/booking'
 
 interface BookingCTAProps {
   heading?: string
@@ -23,7 +23,14 @@ export function BookingCTA({
         )}
 
         <div className="flex justify-center items-center">
-          <PrimaryButton variant="white" size="lg" className="shadow-sm font-bold" />
+          <a
+            href={bookingConfig.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-[#7A2332] px-10 py-4 rounded-md text-sm font-bold uppercase tracking-wider hover:bg-[#F4EFE6] transition-colors shadow-sm whitespace-nowrap"
+          >
+            {bookingConfig.label}
+          </a>
         </div>
       </div>
     </section>
