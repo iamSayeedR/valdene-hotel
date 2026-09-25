@@ -12,12 +12,6 @@
   --color-border: #D8D0C5;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -27,25 +21,35 @@ body {
   font-family: "Inter", system-ui, sans-serif;
   background-color: #FAF7F2;
   color: #2B2623;
-  font-size: 1.0625rem; /* 17px */
+  font-size: 1.0625rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Master Cross-Browser Centered Container System */
-.site-container {
-  width: 100%;
-  max-width: 1200px;
+/*
+  BULLETPROOF CENTERING
+  Uses the highest-specificity selector possible so nothing can override it.
+  The .site-container class centers content with max-width 1200px.
+*/
+.site-container,
+div.site-container,
+section.site-container,
+nav.site-container,
+footer .site-container,
+header .site-container {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1200px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
 }
 
 h1 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
   line-height: 1.1;
   font-weight: 700;
   color: #2B2623;
@@ -53,7 +57,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   line-height: 1.2;
   font-weight: 700;
   color: #2B2623;
@@ -61,7 +65,7 @@ h2 {
 
 h3 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
   line-height: 1.3;
   font-weight: 600;
   color: #2B2623;
@@ -80,8 +84,6 @@ a {
 button {
   font-family: "Inter", system-ui, sans-serif;
   cursor: pointer;
-  border: none;
-  background: none;
 }
 
 :focus-visible {
