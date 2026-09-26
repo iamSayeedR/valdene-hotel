@@ -40,7 +40,7 @@ body {
   padding-right: 24px;
 }
 
-/* Hero Special Offers Button Hover Fix */
+/* Hero Special Offers Button Hover */
 .btn-hero-offers {
   background-color: rgba(43, 38, 35, 0.75) !important;
   color: #ffffff !important;
@@ -54,15 +54,15 @@ body {
   border-color: #ffffff !important;
 }
 
-/* Special Offers Page - Call Us Button Hover Fix */
-.btn-call-us {
+/* Outlined Call Us Button Hover */
+.btn-call-us-outlined {
   background-color: #FAF7F2 !important;
   color: #7A2332 !important;
   border: 1.5px solid #7A2332 !important;
   transition: all 0.2s ease-in-out !important;
 }
 
-.btn-call-us:hover {
+.btn-call-us-outlined:hover {
   background-color: #7A2332 !important;
   color: #ffffff !important;
   border-color: #7A2332 !important;

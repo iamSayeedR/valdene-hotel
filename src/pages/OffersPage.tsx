@@ -25,8 +25,7 @@ export function OffersPage() {
             <PrimaryButton size="lg" className="font-bold w-full sm:w-auto shadow-md" />
             <a
               href={hotel.contact.phoneHref}
-              className="inline-block uppercase tracking-[0.1em] font-bold rounded-md transition-all duration-200 bg-[#7A2332] !text-white hover:bg-[#5C1A26] shadow-md px-9 py-3.5 text-sm w-full sm:w-auto text-center whitespace-nowrap"
-              style={{ color: '#ffffff' }}
+              className="btn-call-us-outlined inline-block uppercase tracking-[0.1em] font-bold rounded-md px-9 py-3.5 text-sm w-full sm:w-auto text-center whitespace-nowrap shadow-xs"
             >
               Call Us: {hotel.contact.phone}
             </a>
